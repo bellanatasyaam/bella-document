@@ -1,0 +1,159 @@
+MACAM-MACAM OPERATOR PHP
+Integer			: di pakai buat bilangan bulat, 							cnth 	: 10, -5, 0
+Float (atau Double)	: di pakai buat bilangan pecahan atau desimal, 						cnth	: 3.14, -2.5 
+String			: di pakai buat teks atau karakter, 							cnth 	: "Halo", "PHP", "123" 
+Array			: di pakai buat simpan kumpulan data dlm satu variabel, kyk daftar nama atau angka 
+Object			: di pakai buat presentasikan objek yg punya properti dan metode, biasanya terkait sm pemrograman berorientasi objek
+Resource		: di pakai buat presentasikan sumber daya eksternal, kyk koneksi database atau file 
+NULL			: di pakai buat presentasikan variabel yg ga punya nilai
+Boolean			: di pakai buat nyimpan nilai benar (true/1) atau salah (false/0)
+
+
+<?php 		: buat tag pembuka yg nandain kode awal PHP dlm sebuah file
+echo 		: buat nampilin isi variabel atau teks ke layar browser
+// 		: ini komentar satu baris
+# 		: ini juga komentar satu baris
+/* 		:
+  		 ini komentar
+  		 yg bisa
+ 		 lebih dari satu baris
+*/
+$ 		: buat menandai variabel. abis $ harus diikuti nama variabel yg valid (harus dimulai dgn huruf atau underscore, ga boleh diawali angka)
+<p> 		: buat bikin paragraf baru 
+<br> 		: buat baris baris baru (line break) di dlm teks
+var_dump() 	: nampilkan tipe data dan nilai
+<hr>		: tag HTML <hr> buat bikin garis horizontal sbg pemisah tampilan
+
+Klasifikasi Informasi
+$teks = "Hello"; // String 		: tipe data string, yaitu teks
+$angka = 100; // Integer 		: tipe data integer, yaitu bilangan bulat
+$desimal = 3.14; // Float 		: bilangan dengan bagian desimal
+$benar = true; // Boolean 		: hanya bisa bernilai true (benar) atau false (salah)
+$array = ["apel", "mangga"]; // Array 	: kumpulan data dalam satu variabel
+$kosong = null; // Null 		: variabel yg tidak memiliki nilai apa pun
+
+Operator Perbandingan
+$a == $b 	: Operator == berarti sama dengan (comparison)
+$a != $b	: Operator != berarti tidak sama dengan
+$a > $b		: Operator > berarti lebih besar dari
+$a >= $b	: Operator >= berarti lebih besar dari atau sama dengan
+
+== 		: bandingkan kesamaan nilai
+!= 		: bandingkan ketidak-samaan nilai
+> 		: cek lebih besar
+>= 		: cek lebih besar atau sama dengan
+<	 	: cek lebih kecil
+<=		: cek lebih kecil atau sama dengan 
+var_dump() 	: nampilkan hasil berupa tipe data dan nilainya (bool(true) atau bool(false)) 
+
+Operator Logika
+Operator AND (&&)	: mengecek apakah keduanya bernilai true 		cnth: $benar && $salah artinya: true AND false
+Operator OR (||)	: mengecek apakah minimal salah satu bernilai true	cnth: $benar || $salah artinya: true OR false
+Operator NOT (!)	: membalik nilai boolean jadi kebalikannya		cnth: !$benar artinya kebalikan dari true adalah false
+
+Boolean itu tipe data yang cuma punya dua nilai: true (benar) atau false (salah). 
+Digunakan buat menentukan kondisi dalam program, misalnya cek “iya” atau “tidak”, supaya program bisa ambil keputusan.
+
+Struktur Kontrol: if-else if-else
+kalo variabel $nilai bernilai 90 atau lebih, maka program akan nampilkan		: "Nilai Kamu adalah A."
+kalo ga, maka dicek apakah nilai lebih dari atau sama dengan 80. kalau iya, nampilkan	: "Nilai Kamu adalah B."
+kalo kedua kondisi di atas ga terpenuhi (nilai kurang dari 80), maka nampilkan		: "Nilai Kamu adalah C."
+
+Struktur Kontrol: switch case
+Variabel $hari diisi dgn nilai "Senin".
+
+case "Senin"				: kalo nilai $hari adlh "Senin", maka kode di dlm blok ini akan dijalankan, yaitu nampilkan teks "Hari kerja pertama." lalu break; menghentikan pemeriksaan case lain
+case "Sabtu": dan case "Minggu"		: kalo nilai $hari adlh "Sabtu" atau "Minggu", maka akan menampilkan "Akhir pekan.". Ini teknik menumpuk dua case agar keduanya menjalankan perintah yang sama
+default					: kalo nilai $hari ga cocok dgn semua case di atas, maka blok default akan dijalankan, nampilkan "Hari biasa."
+break;					: fungsiny buat menghentikan eksekusi switch setelah case yg cocok dijalankan, supaya ga lanjut ke case berikutnya
+
+Nested If-Else: Kondisi Bersarang adlh if di dalam if. 
+artinya, di dlm satu kondisi if, ada lagi pengecekan kondisi lain. 
+ini berguna buat bikin keputusan yg lebih detail berdasarkan beberapa kriteria secara berurutan
+
+Nested Looping: Perulangan Bersarang
+for = perulangan
+() = aturan perulangan (mulai; kondisi; naikkan nilai)
+	($i = 1; $i <= 3; $i++) 	: ini adlh bagian pengaturan loop yg terdiri dari 3 bagian:
+													$i = 1;		: inisialisasi, mulai nilai variabel $i dari 1
+													$i <= 3; 	: kondisi agar loop terus berjalan selama $i kurang dari atau sama dengan 3
+													$i++ 		: increment, setiap selesai satu putaran, nilai $i bertambah 1 ($i = $i + 1)
+Nested for 	: ada for kedua di dlm loop pertama, jadi ini loop di dalam loop
+		  loop kedua menggunakan variabel $j yg juga diinisialisasi dan diatur serupa
+echo		: perintah buat nampilkan teks di browser
+"i = $i, j = $j<br>" 			: string yg ditampilkan, "$i" dan "$j" adlh variabel yg nilainya disisipkan di dlm string
+<br>					: tag HTML untuk baris baru supaya output tampil rapi.
+Variabel	: seperti $i dan $j
+Simbol $ 	: variabel
+{} = blok kode yg dijalankan setiap kali loop
+echo = cetak output
+$variabel = tempat simpan data yg berubah-ubah di loop
+<br> = membuat baris baru di hasil tampilan web
+
+OOP (Object-Oriented Programming)
+class Mobil { 								: membuat 1 kelas bernama Mobil. kelas ini template utk membuat objek mobil
+public $merk;								: konsep properti (atribut/data) merk yg publik (bisa diakses di mana saja)
+public $warna;								: konsep properti warna dgn akses publik
+public function __construct($merk, $warna) {				: konsep constructor—fungsi khusus yg otomatis dipanggil pas buat objek baru dari kelas ini 
+									  fungsi ini menerima dua parameter $merk dan $warna.
+$this->merk = $merk;							: ngisi properti merk dari objek saat ini ($this) dgn nilai dari parameter $merk
+$this->warna = $warna;							: ngisi properti warna dari objek saat ini dengan nilai parameter $warna
+public function jalan() {						: mendefinisikan fungsi/method jalan() yg bisa dipanggil ke objek buat menjalankan perintah
+echo "Mobil $this->merk berwarna $this->warna sedang berjalan.\n"; 	: nampilkan teks yg gabungin nilai properti merk dan warna dari objek yg ini ($this)
+} (tutup fungsi, kelas)							: menandai akhir fungsi dan kelas
+$mobil1 = new Mobil("Toyota", "Hitam");					: buat objek baru bernama $mobil1 dari kelas Mobil, dgn parameter merk "Toyota" dan warna "Hitam"
+									  ini secara otomatis manggil constructor buat isi properti
+$mobil1->jalan();							: manggil method jalan() dari objek $mobil1, sampai nampilkan teks mobil berjalan sesuai properti objek
+
+Konsep Penting OOP
+Class			: Blueprint atau cetak biru untuk membuat objek
+Object			: Hasil instance dari class
+Property		: Variabel di dalam class
+Method			: Fungsi di dalam class
+Constructor		: Metode khusus yang dipanggil saat objek dibuat
+Encapsulation		: Konsep pembatasan akses data (menggunakan public, protected, private)
+Inheritance		: Pewarisan sifat dari class induk ke class anak
+Polymorphism		: Kemampuan objek berbeda untuk merespons metode yang sama dengan cara berbeda
+
+Array Asosiatif & Multidimensi
+Array Asosiatif		: $user adalah array asosiatif		: array yang pake key (kunci) berbentuk string buat akses nilainya
+			  "nama" => "Budi" 			: array memiliki elemen dgn kunci "nama" dan nilainya "Budi"
+			  "email" => "budi@example.com" 	: elemen dgn kunci "email" dan nilainya "budi@example.com"
+			   echo $user["nama"]; 			: menampilkan nilai dari elemen dgn kunci "nama", yaitu "Budi"
+Array Multidimensi	: $users adlh array multidim		: array yg berisi array lain, ideal buat data seperti tabel
+
+
+DASAR-DASAR HTML & CSS UNTUK PEMULA
+<!DOCTYPE html>								: ngasih tau browser kalo dokumen ini tuh file HTML5
+<html lang="id">							: tag root dari dokumen HTML, dgn atribut lang="id" artiny bahasa isi halaman ini adlh Bahasa Indonesia
+<head>									: bagian kepala dokumen, yg ada metadata, judul, dan pengaturan lain yg ga muncul langsung di halaman
+<meta charset="UTF-8" />						: nentuin tipe karakter jadi UTF-8 biar dukung banyak karakter, termasuk huruf Indonesia dan simbol internasional
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 	: jadi in halaman responsif, ngatur agar lebar halaman menyesuaikan layar perangkat, penting buat tampilan di mobile
+<title>Contoh h1 dengan CSS</title> 					: judul halaman yg muncul di tab browser
+<style> 								: tag buat menyisipkan CSS langsung di halaman
+h1 {
+  color: #2c3e50;            /* Warna teks */
+  font-size: 48px;           /* Ukuran font */
+  font-family: Arial, sans-serif;  /* Jenis font */
+  text-align: center;        /* Teks di tengah */
+  margin-top: 50px;          /* Jarak atas */
+} 									: aturan di CSS buat elemen <h1>:
+color: #2c3e50; 							: ngasih warna teks biru gelap
+font-size: 48px;							: buat teks besar ukuran 48 piksel
+font-family: Arial, sans-serif; 					: ngatur jenis huruf Arial, jika ga tersedia pakai font sans-serif generik
+text-align: center; 							: buat teks rata tengah horizontal
+margin-top: 50px; 							: ngasih jarak 50 piksel di atas elemen biar ga terlalu nempel ke atas
+
+</style>
+</head> 								: nutup tag style dan tag head
+
+<body> 									: bagian isi halaman yg ditampilkan ke pengguna
+<h1>Ini Judul Utama</h1> 						: elemen heading level 1 yg nampilkan teks “Ini Judul Utama” dengan gaya CSS yang sudah diatur
+
+</body>
+</html> 								: nutup tag body dan tag html
+
+<link>			: Tag HTML yang dipakai untuk menghubungkan dokumen HTML dengan sumber daya eksternal, biasanya file CSS.
+href="link"		: Atribut ini berisi alamat atau path file CSS yang ingin dihubungkan. Cnth	: href="style.css" berarti file CSS bernama style.css di folder yang sama. 
+													  Bisa juga URL lengkap seperti href="https://example.com/style.css".
+rel="stylesheet"	: Atribut rel menunjukkan hubungan antara file yang dihubungkan dengan halaman HTML. Nilai "stylesheet" berarti ini adalah file CSS (lembar gaya) yang mengatur tampilan halaman.
