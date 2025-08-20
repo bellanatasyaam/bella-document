@@ -1,3 +1,92 @@
 buat halamat baru tentang services masih di satu codingan
 
-cart  view
+cart  view di "Our Services"
+
+Understanding Cardiology: The Science of the Heart and Cardiovascular Health
+
+
+Cardiology is a specialized branch of medicine focused on the study, diagnosis, treatment, and management of disorders related to the heart and the cardiovascular system. This field encompasses a wide range of heart conditions and diseases, including congenital heart defects, coronary artery disease, heart failure, valvular heart disease, and cardiac arrhythmias, among others.
+
+The heart itself is a vital muscular organ responsible for pumping blood throughout the body via the circulatory system. It consists of multiple anatomical structures, such as the atria, ventricles, and heart valves, and operates with both mechanical and electrical functions. The mechanical function relates to the heart's role as a pump moving blood to the lungs for oxygenation (pulmonary circulation) and then to the rest of the body (systemic circulation). The electrical function involves the generation and conduction of electrical impulses that coordinate the contraction of the heart muscle to maintain an effective heartbeat, governed primarily by the sinoatrial node, the heart's natural pacemaker.
+
+Cardiologists, the physicians specializing in this domain, are experts trained in internal medicine and have further specialized training in heart-related conditions. They use various diagnostic tools such as electrocardiograms (ECG or EKG), echocardiograms, stress tests, and cardiac catheterization to evaluate heart function and detect abnormalities. They manage both acute manifestations, such as heart attacks, and chronic conditions like heart failure or arrhythmias.
+
+<!-- Cardiology (ganjil) -->
+    <div class="row align-items-center mb-5">
+        <div id="cardiology" class="row align-items-center mb-5"></div>
+      <div class="col-lg-6">
+        <img src="Cardiologist.png" alt="Cardiology" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#cardiologyModal">
+        <h3>Cardiology</h3></a>
+
+        <p>Cardiology is the branch of medicine that deals with the diagnosis and treatment of heart and blood vessel disorders. Cardiologists manage conditions such as coronary artery disease, heart failure, arrhythmias, and congenital heart defects. They perform procedures like cardiac catheterization and angioplasty, and may use devices such as pacemakers to regulate heart rhythms. This field plays a critical role in preventing heart attacks and improving cardiovascular health.</p>
+      </div>
+    </div>
+
+    <!-- Neurology (genap) -->
+    <div class="row align-items-center mb-5 flex-lg-row-reverse">
+        <div id="neurology" class="row align-items-center mb-5 flex-lg-row-reverse"></div>
+      <div class="col-lg-6">
+        <img src="Neurology.png" alt="Neurology" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#neurologyModal">
+        <h3>Neurology</h3></a>
+        <p>Neurology focuses on disorders of the nervous system, including the brain, spinal cord, nerves, and muscles. Neurologists diagnose and treat conditions like stroke, epilepsy, multiple sclerosis, Parkinson’s disease, and migraines. They use advanced imaging and electrophysiological tests to assess neurological function and develop treatments aimed at improving patient quality of life.</p>
+      </div>
+    </div>
+
+    <!-- Pediatrics (ganjil) -->
+    <div class="row align-items-center mb-5">
+        <div id="pediatrics" class="row align-items-center mb-5"></div>
+      <div class="col-lg-6">
+        <img src="Pediatrics.jpeg" alt="Pediatrics" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#pediatricsModal">
+        <h3>Pediatrics</h3></a>
+        <p>Pediatrics is the medical specialty dedicated to the care of infants, children, and adolescents. Pediatricians provide preventive health care, monitor growth and development, and treat a broad range of childhood illnesses and conditions. They work closely with families to ensure healthy development, vaccination, and manage illnesses specific to younger populations.</p>
+      </div>
+    </div>
+
+    <!-- Dermatology (genap) -->
+    <div class="row align-items-center mb-5 flex-lg-row-reverse">
+        <div id="dermatology" class="row align-items-center mb-5"></div>
+      <div class="col-lg-6">
+        <img src="Dermatology.png" alt="Dermatology" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#dermatologyModal">
+        <h3>Dermatology</h3></a>
+        <p>Dermatology involves the study, diagnosis, and treatment of diseases related to the skin, hair, and nails. Dermatologists treat common conditions like acne, eczema, psoriasis, and skin infections, as well as detect and manage skin cancers. They offer both medical and cosmetic treatments to improve skin health and appearance.</p>
+      </div>
+    </div>
+
+    <!-- Dental Care (ganjil) -->
+    <div class="row align-items-center mb-5">
+        <div id="dentalcare" class="row align-items-center mb-5"></div>
+      <div class="col-lg-6">
+        <img src="Dental Care.png" alt="Dental Care" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#dentalcareModal">
+        <h3>Dental Care</h3></a>
+        <p>Dental care encompasses the prevention, diagnosis, and treatment of dental and oral health issues. Dentists provide cleanings, cavity fillings, root canals, orthodontics, and oral surgery. Good dental care is essential for overall health, and dental professionals educate patients on maintaining healthy teeth and gums.</p>
+      </div>
+    </div>
+
+    <!-- Ophthalmology (genap) -->
+    <div class="row align-items-center mb-5 flex-lg-row-reverse">
+        <div id="ophthalmology" class="row align-items-center mb-5"></div>
+      <div class="col-lg-6">
+        <img src="Ophthalmology.png" alt="Ophthalmology" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#ophthalmologyModal">
+        <h3>Ophthalmology</h3></a>
+        <p>Ophthalmology is the branch of medicine concerned with eye health and vision care. Ophthalmologists diagnose and treat eye diseases such as glaucoma, cataracts, macular degeneration, and diabetic retinopathy. They perform eye surgeries and prescribe corrective lenses to improve vision and prevent blindness.</p>
+      </div>
+    </div>
+  </div>
